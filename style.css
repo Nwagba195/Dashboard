@@ -1,0 +1,192 @@
+nav {
+    background-color: #3E4357;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav .search-container {
+    display: inline-flex;
+    margin-right: 100px;
+}
+
+nav .search {
+    background-color: #4A5068;
+    border: 0;
+    border-radius: 0;
+    width: 350px;
+    padding: 10px 15px;
+}
+
+nav img.profile-img {
+    margin-left: 25px;
+    width: 40px;
+    height: 40px;
+}
+
+nav .search:focus,
+nav .search:focus-visible {
+    border: 0;
+    outline: none;
+}
+
+nav .search-icon {
+    text-align: center;
+    background-color: #4A5068;
+    padding: 12px;
+    padding-right: 0;
+    color: #ccc;
+}
+
+nav .search::placeholder {
+    color: #ccc;
+}
+
+nav .dropdown-menu {
+    background-color: #3E4357;
+}
+
+nav .dropdown-menu a {
+    color: #ccc;
+}
+
+nav .dropdown-menu a:hover {
+    background-color: #4A5068;
+    color: #ccc;
+}
+
+aside.sidebar {
+    background-color: #42475D;
+    height: calc(100vh - 66px);
+    width: 250px;
+    padding-top: 100px;
+    display: inline-block;
+    position: fixed;
+    margin-top: 66px;
+}
+
+aside.sidebar .sidebar-nav-list-item {
+    width: 80%;
+    margin: 10px;
+    list-style: none;
+    padding: 6px 10px;
+    align-items: center;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+aside.sidebar .sidebar-nav-list-item:hover,
+aside.sidebar .sidebar-nav-list-item.active {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+aside.sidebar .sidebar-nav-list-item a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+aside.sidebar .sidebar-nav-list-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.content-area {
+    width: calc(100% - 260px);
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 260px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.drag-area {
+    height: 300px;
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F1F3FD;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.drag-area.active {
+    border: 2px solid #fff;
+}
+
+.drag-area .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    color: rgb(3, 3, 3);
+    border-radius: 50%;
+    padding: 40px;
+    background-color: #E9ECFC;
+}
+
+.drag-area .icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.drag-area header {
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(17, 17, 17);
+}
+
+.drag-area p {
+    color: rgb(5, 5, 5, .3);
+    margin: 10px 0 15px 0;
+}
+
+.drag-area button {
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: rgb(15, 15, 15);
+    color: #5256ad;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.drag-area img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+button.open-file {
+    border: 0;
+    color: #454242;
+    margin: 10px auto;
+    margin-top: 30px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #FED284;
+}
+
+.file {
+    width: 50%;
+    height: 45px;
+    color: black;
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, .1);
+}
+
+.file:hover {
+    cursor: pointer;
+}

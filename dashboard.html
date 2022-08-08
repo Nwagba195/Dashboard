@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="py-3">
+        <div class="container-fluid align-items-center text-end">
+
+            <div class="search-container align-items-center ms-auto">
+                <form class="me-3" role="search">
+                    <div class="input-group align-items-center">
+                        <img class="search-icon" src="./Icons and illustrations/search-normal.svg" alt="">
+                        <div class="form-floating">
+                            <input class="search" type="search" class="form-control" placeholder="Search">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="dropdown">
+                    <a href="#" class="d-block link-dark text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+
+                        <img src="Images\jessica-felicio-QS9ZX5UnS14-unsplash.jpg" alt="mdo" class="profile-img rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small">
+                        <li class="dropdown-item">
+                            <p class="username"> Jane Doe</p>
+                            <small class="email"> Janedoe@gmail.com. </small>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Print</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Integrations</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Help</a></li>
+                        <li>
+                            <a class="dropdown-item" href="#">settings</a>
+                        </li>
+                        <li>
+                            <br>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <ul class="sidebar-nav-list">
+            <li class="sidebar-nav-list-item ms-auto me-0 active">
+                <img src="./Icons and illustrations/simcard-2.svg" alt="">
+                <a href="">
+                    Compare
+                </a>
+            </li>
+
+            <li class="sidebar-nav-list-item ms-auto me-0">
+                <img src="./Icons and illustrations/sms-star.svg" alt="">
+                <a href="">
+                    Saved
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- SIDEBAR -->
+
+    <!-- Drag & Drop -->
+
+    <div class="content-area">
+        <div class="drag-area">
+            <div class="icon">
+                <img src="./Icons and illustrations/export.svg" alt="">
+            </div>
+            <p class="mt-3">Drop files here</p>
+            <input type="file" hidden>
+        </div>
+
+        <button class="open-file"> Or click to open file from your computer </button>
+    </div>
+
+
+    <!-- Drag & Drop -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
